@@ -14,7 +14,7 @@ The goal of this project is to develop models to classify the MNSIT
 - <img width="1176" alt="MNIST" src="https://user-images.githubusercontent.com/59991041/151294243-93ef0e0a-4e83-4026-93a4-14d4093213e2.png">
 
 ## CNN
-- Our model uses:
+Our model uses:
 1. 9 convolutional <br>
 2. 1 flattening <br>
 3. 3 fully connected layers <br>
