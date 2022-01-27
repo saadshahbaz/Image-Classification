@@ -1,40 +1,38 @@
-# Covid-Vaccine-DataBase
+# Image Classification
 
 
 ## Objective
-
-The goal of this project is to develop and build a database application for a real-world domain. Step-by-step, designing a schema, create a database using DB2, populate the database with data, maintain, query and update your data, develop application programs, and implement a user-friendly interface. 
-
-## Creating a Data Model.
-
-Creating a Data Model to connect every component of the proccess and obtain an efficient diagram which can later be implemented to form the full fledged data base. 
-
-- The data model can be found in the `src/model/ER.pdf`
-- Translation of the ER diagram as well as the assumptions and restrictions can be found in the `src/model/project.pdf`
-
-## Goal
-The goal of this project is to develop models to classify the MNSIT datasets which is composed of letters and digits.
+The goal of this project is to develop models to classify the MNSIT
 - The data model can be found in the <a href="https://www.kaggle.com/c/comp-551-fall-2021/data" target="_blank">Kaggle </a>
-- To create Tables and Insert data, Please run the following files in order `src/model/sql_files/createtbl.sh` and `src/model/sql_files/loaddata.sh`
-- To remove all the tables please run the following file: `src/model/sql_files/droptable.sh`
+- Making a custom CNN architecture to acheive an accuracy >90%
+## Dataset
+- The Dataset is comprised of 60,000 trained images, with 30,000 labelled images and 30,000 unlabelled changes. <br>
+- The Dataset is comprised of 15,000 test images.<br>
+- Each image has dimensions of 56 x 56 and comprises of two characters: <br>
+     1. `One Digits (from numbers 0-9)`<br>
+     2. `One English alphabet (26 alphabets)`<br>
+- <img width="1176" alt="MNIST" src="https://user-images.githubusercontent.com/59991041/151294243-93ef0e0a-4e83-4026-93a4-14d4093213e2.png">
 
-## Creating a backend for the database 
-Creating a bakend in Java for the relational scehma that was designed earlier
-- User selects the menu option based on what they would like to do, program performs that action and goes back to displaying the menu.
-- Specific options for User include the following: <br>
-  `VaccineApp Main Menu`<br>
-     1. `Add a Person`<br>
-     2. `Assign a slot to a Person`<br>
-     3. `Enter Vaccination information`<br>
-     4. `Exit Application`<br> 
- `Please Enter Your Option:`<br>
-  
-- Conducting specific query commands inside the java to allow minimal information from the user
-- A few examples of the application specific to the database can be found in the `src/model/project3.pdf` file.
+## CNN
+- Our model uses:
+1. 9 convolutional <br>
+2. 1 flattening <br>
+3. 3 fully connected layers <br>
 
-## A few SQL commands
-- A few SQL commands specific to the database can be found in the `src/model/project.pdf` file.
+Each layer, except the final layer, use ReLU activation function and include batch normalization and some max pooling
 
+## Code
+
+The code can be found in `project/src`
+
+## Accuracy
+
+- Reached a training accuracy of 93.8% and a test accuracy of 94.08%. 
+- Received an accuracy of 94.84% on Kaggle.
+
+## Report
+
+Here is a detailed report for the models implemented: <a href="https://github.com/saadshahbaz/Image-Classification/blob/main/Comp551_Project3.pdf" target="_blank"> Multi-label Classification of Image Data </a>
 
 
 
