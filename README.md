@@ -27,8 +27,8 @@ The code can be found in `project/src`
 
 ## Accuracy
 
-- Reached a training accuracy of 93.8% and a test accuracy of 94.08%. 
-- Received an accuracy of 94.84% on Kaggle.
+- Reached a training accuracy of <b> 93.8% </b> and a test accuracy of <b> 94.08% </b>. 
+- Received an accuracy of <b> 94.84% </b> on Kaggle.
 
 ## Report
 
